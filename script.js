@@ -10,5 +10,20 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     document.getElementById('contact-message').textContent = 'Thank you for your message! We will get back to you soon.';
 });
 
+// Animate sections
+const sections = document.querySelectorAll('section');
+
+function animateSections() {
+    sections.forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+            section.classList.add('animate');
+        }
+    });
+}
+
+animateSections();
+
+window.addEventListener('scroll', animateSections);
+
 
 
