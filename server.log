@@ -1,0 +1,10 @@
+serving at port 59717
+Server is ready to receive requests...
+172.17.0.1 - - [25/Jun/2025 09:09:17] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [25/Jun/2025 09:10:17] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [25/Jun/2025 09:10:17] "GET // HTTP/1.1" 200 -
+172.17.0.1 - - [25/Jun/2025 09:10:17] "GET // HTTP/1.1" 200 -
+172.17.0.1 - - [25/Jun/2025 09:10:17] "GET //style.css HTTP/1.1" 200 -
+172.17.0.1 - - [25/Jun/2025 09:10:17] "GET //script.js HTTP/1.1" 200 -
+172.17.0.1 - - [25/Jun/2025 09:10:17] code 404, message File not found
+172.17.0.1 - - [25/Jun/2025 09:10:17] "GET /favicon.ico HTTP/1.1" 404 -
