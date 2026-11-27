@@ -4,7 +4,7 @@ Osobní prezentace Michala Důma, IT konzultanta a vývojáře. Značka MDServic
 
 ## Soubory a provoz
 
-Statický web je v `public/`. Nepotřebuje build, databázi ani externí služby. Písma jsou lokální (Inter a IBM Plex Mono). Texty jsou součástí HTML, stránky fungují i bez JavaScriptu; JavaScript ovládá pouze mobilní navigaci. Web nepoužívá cookies, analytiku ani kontaktní formulář; kontakt otevírá e-mailovou aplikaci.
+Statický web je v `public/`. Nepotřebuje build ani databázi. Písma jsou lokální (Inter a IBM Plex Mono). Texty jsou součástí HTML, stránky fungují i bez JavaScriptu; JavaScript ovládá mobilní navigaci a volbu analytiky. Google Analytics 4 se načítá pouze po souhlasu návštěvníka. Web nemá kontaktní formulář; kontakt otevírá e-mailovou aplikaci.
 
 Repozitář na serveru: `/home/ad/web/doomWeb`. Publikovaná kopie: `/home/ad/web/src/mdservices`, dostupná ve stávajícím kontejneru `web-web-1` jako `/var/www/html/mdservices`. Publikuje se pouze obsah `public/`, takže Git a provozní soubory nejsou ve webovém kořeni.
 
@@ -19,3 +19,13 @@ Konfigurace Apache: `ops/011-mdservices.conf` a `ops/mdservices-common.inc`, ins
 5. Ověřit veřejné HTTPS stránky a přesměrování, commitnout a pushnout do `main`.
 
 Původní obsah repozitáře je dohledatelný v historii Git. Ostatní weby mají vlastní vhosty a adresáře.
+
+## SEO a analytika (27. 11. 2026)
+
+- Služby mají vlastní stránky v CZ a EN: vývoj aplikací s AI, integrace a automatizace, síťová architektura. Každá stránka má vlastní title, description, canonical, vzájemné hreflang odkazy, strukturovaná data a interní odkazy. Sitemap obsahuje 10 URL včetně obou stránek soukromí.
+- Search Console: URL-prefix služba `https://www.mdoom.net/`, ověřené vlastnictví metaznačkou. Sitemap `https://www.mdoom.net/sitemap.xml` byla odeslána. Přijetí sitemapy není potvrzením indexace každé URL; počáteční stav lze kontrolovat v GSC a analytickém dashboardu.
+- GA4: služba `566039954`, stream `16427690521`, měřicí ID `G-FQTDFZ74VQ`; veřejná identifikace je v `ops/google-services.json` (žádná hesla ani OAuth tokeny).
+- `public/assets/analytics.js` načítá GA4 až po povolení analytiky. Do té doby neposílá Googlu žádné požadavky. Odmítnutí i odvolání souhlasu vypíná měření; volba se uchovává 180 dní. Nastavení je dostupné v patičce. Google Signals a reklamní personalizace jsou vypnuté. Retence dat uživatelů i událostí je dva měsíce bez resetování novou aktivitou.
+- Události: `page_view`, `contact_click` (GA4 key event, kliknutí na mailto, nikoli odeslaná zpráva), `project_click` (kliknutí na referenci). Neodesílá se obsah e-mailu.
+- Dashboard na serveru 100: `/home/ad/web/analytics`, https://analytics.mdoom.net/. Projekt `mdservices` používá vlastní GA4 a GSC data; má deník, podrobný filtr webu a je zahrnutý ve stávající automatické obnově v 06:00 Europe/Prague. Kontaktní kliknutí se zobrazují jako `email_clicks`.
+- Nová GA4 služba nemá historickou návštěvnost. Denní reporty končí včerejškem. Nové záznamy vyhledávání se objeví po zpracování Googlem.

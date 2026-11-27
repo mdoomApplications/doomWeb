@@ -1,1 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://www.mdoom.net/</loc><xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/"/></url><url><loc>https://www.mdoom.net/en/</loc><xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/"/></url></urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.mdoom.net/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/vyvoj-aplikaci-s-ai/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/vyvoj-aplikaci-s-ai/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/ai-app-development/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/vyvoj-aplikaci-s-ai/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/integrace-a-automatizace/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/integrace-a-automatizace/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/system-integration-automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/integrace-a-automatizace/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/sitova-architektura/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/sitova-architektura/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/network-architecture/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/sitova-architektura/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/soukromi/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/soukromi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/soukromi/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/en/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/en/ai-app-development/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/vyvoj-aplikaci-s-ai/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/ai-app-development/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/vyvoj-aplikaci-s-ai/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/en/system-integration-automation/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/integrace-a-automatizace/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/system-integration-automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/integrace-a-automatizace/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/en/network-architecture/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/sitova-architektura/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/network-architecture/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/sitova-architektura/" />
+  </url>
+  <url>
+    <loc>https://www.mdoom.net/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.mdoom.net/soukromi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.mdoom.net/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.mdoom.net/soukromi/" />
+  </url>
+</urlset>
